@@ -13,11 +13,11 @@ import zipfile
 # Only download if model folder doesn't exist
 model_dir = "train_model"
 zip_file = "train_model.zip"
-drive_file_id =1-2dR71dBKp4mQgId4uNLI9uVvEdnFYQ- # <-- Replace this with your real file ID
+drive_file_id ="1-2dR71dBKp4mQgId4uNLI9uVvEdnFYQ-" # <-- Replace this with your real file ID
 
 if not os.path.exists(model_dir):
     st.info("Downloading model from Google Drive...")
-    gdown.download(f"https://drive.google.com/uc?id=1-2dR71dBKp4mQgId4uNLI9uVvEdnFYQ-", zip_file, quiet=False)
+    gdown.download(f"https://drive.google.com/uc?id="1-2dR71dBKp4mQgId4uNLI9uVvEdnFYQ-", zip_file, quiet=False)
 
     st.info("Extracting model files...")
     with zipfile.ZipFile(zip_file, "r") as zip_ref:
