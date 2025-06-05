@@ -1,0 +1,5 @@
+train_model/
+train_model.zip
+__pycache__/
+*.pyc
+.DS_Store
